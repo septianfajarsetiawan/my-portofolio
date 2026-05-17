@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>SEFAS | Professional Designer Portfolio</title>
+    <title>SEFAS | Professional MultiDesigner From Cirebon</title>
 
     <!-- Google Fonts: Epilogue (Headline) & Manrope (Body/Label) -->
 
@@ -88,6 +88,16 @@
       }
     </script>
 
+    <!-- Lazy Loading -->
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll("img").forEach(img => {
+            img.setAttribute("loading", "lazy");
+            });
+        });
+    </script>
+
     <script>
     document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault(); // Mencegah halaman reload otomatis
@@ -154,16 +164,13 @@
         <!-- TopAppBar -->
 
 <header class="fixed top-4 inset-x-4 rounded-full flex-warp px-6 z-50 bg-white/70 backdrop-blur-xl shadow-2xl shadow-blue-900/5 max-w-7xl mx-auto flex items-center justify-between h-20 transition-all duration-300">
-
     <div class="flex items-center gap-4 flex-shrink-0">
         <div class="material-symbols-outlined text-blue-700 text-2xl"> </div>
     
         <img 
         src="./source/logo.png" 
         alt="Logo Created by Sefas" 
-        class="h-14 w-auto object-contain"
-    >
-
+        class="h-14 w-auto object-contain">
     </div>
 
     <nav class="hidden md:flex font-bold items-center gap-8">
@@ -178,10 +185,8 @@
    target="_blank"
    class="inline-block">
     
-   <button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold uppercase tracking-tight text-sm transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"> 
-        Work with Me 
-    </button>
-</a>
+    <button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold uppercase tracking-tight text-sm transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"> Work with Me  </button>
+   </a>
 
 </header>
 
@@ -239,62 +244,7 @@
 
     </section>
 
-<!-- About / Strategic Approach -->
-
-    <section class="py-32 px-6 bg-surface-container-low scroll-mt-20" id="about">
-        <div class="max-w-7xl mx-auto sm:px-8 md:px-12">
-            <div class="grid lg:grid-cols-2 gap-20 items-center">
-                <div class="space-y-8">
-        
-                    <h2 class="font-headline text-5xl font-black tracking-tight text-on-background">THE <span class="text-primary">PHILOSOPHY</span> OF BOLD CURATION.</h2>
-
-                    <p class="text-xl leading-relaxed text-on-surface-variant">
-                            I believe that great design is not just seen, but felt. It’s the tension between whitespace and massive typography, the logic of a perfect grid, and the soul of a vibrant palette. My journey has been one of distilling complex problems into elegant visual solutions.
-                        </p>
-
-                        <div class="grid grid-cols-2 gap-8">
-
-                            <div class="p-8 bg-surface rounded-xl shadow-sm">
-
-                                <span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="auto_awesome">auto_awesome</span>
-
-                                <h4 class="font-bold text-lg mb-2">Intentionality</h4>
-
-
-                                <p class="text-sm text-on-surface-variant">Every pixel serves a functional purpose in the user's journey.</p>
-
-                            </div>
-
-                            <div class="p-8 bg-surface rounded-xl shadow-sm">
-
-                                <span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="history_edu">history_edu</span>
-
-                                <h4 class="font-bold text-lg mb-2">Storytelling</h4>
-
-                                <p class="text-sm text-on-surface-variant">Brands aren't logos; they are narratives waiting to be told.</p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="relative group">
-
-                        <div class="bg-primary h-[500px] rounded-xl overflow-hidden shadow-2xl relative">
-
-                            <img alt="Minimalist design studio workspace with modern furniture" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" data-alt="A bright minimalist designer studio workspace with a sleek wooden desk, high-end monitor, and Bauhaus-style chair in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIFBBCdh4tOtCNj42qskFMWDcOM2nIutAkMRupyIwSt9_ityHplRFBnJDHMTH6mHef0Vvx6FWCrNStw3AQKcFuM1sUcRzA-1lJX0MXBB8uqKjYeKtKddxMSKqsbTgHacVxz87Sbt1RaPIm30ieMrMZaPyh0JIQNSduSwgBmvln7g3EIgb4VlDliaGjqr-5Ihf9J1D22jqHIHG0z0n21KP1KY3J6qNV-crVIfGiSPz7PQtftCaTZsOJWBY8pZcuFg_YgYPiMmu_piw">
-
-                            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-<!-- Experience Timeline -->
+     <!-- Experience Timeline -->
 
     <section class="py-32 px-6 scroll-mt-20" id="experience">
         <div class="max-w-7xl mx-auto px-8">
@@ -405,7 +355,63 @@
         </div>
     </section>
 
-<!-- Services Section -->
+
+    <!-- About / Strategic Approach -->
+
+    <section class="py-32 px-6 bg-surface-container-low scroll-mt-20" id="about">
+        <div class="max-w-7xl mx-auto sm:px-8 md:px-12">
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="space-y-8">
+        
+                    <h2 class="font-headline text-5xl font-black tracking-tight text-on-background">THE <span class="text-primary">PHILOSOPHY</span> OF BOLD CURATION.</h2>
+
+                    <p class="text-xl leading-relaxed text-on-surface-variant">
+                            I believe that great design is not just seen, but felt. It’s the tension between whitespace and massive typography, the logic of a perfect grid, and the soul of a vibrant palette. My journey has been one of distilling complex problems into elegant visual solutions.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-8">
+
+                            <div class="p-8 bg-surface rounded-xl shadow-sm">
+
+                                <span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="auto_awesome">auto_awesome</span>
+
+                                <h4 class="font-bold text-lg mb-2">Intentionality</h4>
+
+
+                                <p class="text-sm text-on-surface-variant">Every pixel serves a functional purpose in the user's journey.</p>
+
+                            </div>
+
+                            <div class="p-8 bg-surface rounded-xl shadow-sm">
+
+                                <span class="material-symbols-outlined text-primary text-3xl mb-4" data-icon="history_edu">history_edu</span>
+
+                                <h4 class="font-bold text-lg mb-2">Storytelling</h4>
+
+                                <p class="text-sm text-on-surface-variant">Brands aren't logos; they are narratives waiting to be told.</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="relative group">
+
+                        <div class="bg-primary h-[500px] rounded-xl overflow-hidden shadow-2xl relative">
+
+                            <img alt="Minimalist design studio workspace with modern furniture" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700" data-alt="A bright minimalist designer studio workspace with a sleek wooden desk, high-end monitor, and Bauhaus-style chair in soft daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIFBBCdh4tOtCNj42qskFMWDcOM2nIutAkMRupyIwSt9_ityHplRFBnJDHMTH6mHef0Vvx6FWCrNStw3AQKcFuM1sUcRzA-1lJX0MXBB8uqKjYeKtKddxMSKqsbTgHacVxz87Sbt1RaPIm30ieMrMZaPyh0JIQNSduSwgBmvln7g3EIgb4VlDliaGjqr-5Ihf9J1D22jqHIHG0z0n21KP1KY3J6qNV-crVIfGiSPz7PQtftCaTZsOJWBY8pZcuFg_YgYPiMmu_piw">
+
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
 
     <section class="w-full py-32 px-6 bg-primary scroll-mt-20" id="services">
         <div class="max-w-7xl mx-auto px-8">
@@ -472,356 +478,51 @@
         </div>
     </section>
 
+    <!-- Bottom Part: Logo Grid (Fixed Version) -->
 
-<!-- Revisi Portofolio Galery -->
-
- <section class="py-32 px-6 scroll-mt-20 w-full" id="portfolio">
-
-        <div class="max-w-7xl mx-auto">
-
-            <div class="text-center mb-24">
-
-                <h2 class="font-headline text-6xl font-black tracking-tight mb-6">SELECTED <span class="text-primary">WORKS.</span></h2>
-
-                <p class="text-on-surface-variant text-xl">A curated gallery of recent design challenges and solutions.</p>
-
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:px-8 md:px-12">
-
-                <!-- Large Card 1 -->
-
-                <div class="md:col-span-8 md:row-span-2 h-flex group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Modern abstract UI design showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern abstract high-contrast UI design layout with flowing organic shapes in blue and purple, editorial typography" src="./source/Portofolio-Mockup-Mural-A.jpg">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Outlet Mural</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">RamenYA! Mall Kelapa Gading</h3>
-
-                        <p class="text-white/70 max-w-md">This project encompasses a comprehensive visual transformation for the RamenYA! Mall Kelapa Gading outlet, seamlessly blending traditional Japanese aesthetics with a dynamic modern touch.</p>
-
-                    </div>
-
-                </div>
-
-                <!-- Small Card 1 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Portofolio-Mockup-Mural-Bali.jpg">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Outlet Mural</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">RamenYA! Lippo Mall Bali</h3>
-
-                        <p class="text-white/70 max-w-md">Blending traditional Japanese aesthetics with modern design at RamenYA! Bali.</p>
-
-                    </div>
-
-                </div>
-
-                <!-- Small Card 2 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Minimalist mobile app screens" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Clean minimalist mobile application interface mockups floating in a light airy 3D space" src="./source/Portofolio-Mockup-Dunk-5-edt.jpg">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Concept Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">RamenYA! x Aerostreet (Concept Art)</h3>
-
-                        <p class="text-white/70 max-w-md">Merging Japanese culture with streetwear: A RamenYA! x Aerostreet concept.</p>
-
-                    </div>
-
-                </div>
-
-                <!-- Small Card 3 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Portofolio-Sosmed-Spc-A.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Social Media Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Rubine & Haustern</h3>
-
-                        <p class="text-white/70 max-w-md">Crafting high-impact social media assets for Rubine & Haustern, focusing on clean layouts and clear visual communication to drive product engagement.</p>
-
-                    </div>
-
-                </div>
-
-                <!-- Small Card 4 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Cover_Silent_Mind_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Cover Album</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Spa Esthethic Cover</h3>
-
-                        <p class="text-white/70 max-w-md">Concepting a Serene album cover designed for relaxation audio, yoga, and finding your inner peace.</p>
-
-                    </div>
-
-                </div>
-
-                
-                <!-- Small Card 5 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Book_Chinthia_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Cover Book</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Kaylas</h3>
-
-                        <p class="text-white/70 max-w-md">A non-fiction cover inspiring readers to heal past trauma and embrace transformation.</p>
-
-                    </div>
-
-                </div>
-
-                <!-- Small Card 6 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Book_Elco_by_Sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Cover Book</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Compro Elco</h3>
-
-                        <p class="text-white/70 max-w-md">Modern company profile redesign for a packaging producer with updated business info.</p>
-                    </div>
-                </div>
-
-
-                <!-- Large Card 2 -->
-
-                <div class="md:col-span-8 md:row-span-2 h-flex group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Modern abstract UI design showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern abstract high-contrast UI design layout with flowing organic shapes in blue and purple, editorial typography" src="./source/Book_Menu_RamenYA_Reserve_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Menu Book</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">RamenYA Reserve</h3>
-
-                        <p class="text-white/70 max-w-md">Developing a minimalist and luxurious menu book design crafted for a high-end target market. </p>
-
-                    </div>
-
-                </div>
-
-                <!-- Small Card 8 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Book_Kinder_Mit_ADHD_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Packaging Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Kaylas</h3>
-
-                        <p class="text-white/70 max-w-md">Developing vibrant and playful packaging designs that capture brand essence while ensuring product clarity and shelf appeal.</p>
-                    </div>
-                </div>
-
-                <!-- Small Card 8 -->   
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo-Beauty_Med_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Logo Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Beauty Med</h3>
-
-                        <p class="text-white/70 max-w-md">DEveloping a modern, minimalist, and feminine logo designed for a health and beauty brand.</p>
-                    </div>
-                </div>
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Epic_Cleaning_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Logo Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Epic Cleaning</h3>
-
-                        <p class="text-white/70 max-w-md">Developing A vibrant and playful logo design capturing a fresh, spotless cleaning brand identity.</p>
-                    </div>
-                </div>
-
-                <!-- Small Card 9 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Mailbox_Movie_Concept_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Logo Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Mailbox Movie</h3>
-
-                        <p class="text-white/70 max-w-md">A clever logo design for a premium DVD rental service, bringing the cinema experience home.</p>
-                    </div>
-                </div>
-
-                <!-- Small Card 10 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Nordic_House_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Logo Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">The Nordic House</h3>
-
-                        <p class="text-white/70 max-w-md">Developing A minimalist badge logo blending Nordic architecture with a vibrant coastal vibe.</p>
-                    </div>
-                </div>
-
-                <!-- Small Card 11 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Reddoggo_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Logo Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Redoggo</h3>
-
-                        <p class="text-white/70 max-w-md">Developing an elegant, eco-conscious logo for a premium German brand crafting recycled dog toys.</p>
-                    </div>
-                </div>
-
-                <!-- Small Card 12 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Woof_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Logo Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Redoggo</h3>
-
-                        <p class="text-white/70 max-w-md">A playful and energetic logo identity designed to make pet brands stand out.</p>
-                    </div>
-                </div>
-
-                <!-- Large Card 3 -->
-
-                <div class="md:col-span-8 md:row-span-2 h-flex group relative overflow-hidden rounded-xl bg-slate-200">
-
-                    <img alt="Modern abstract UI design showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern abstract high-contrast UI design layout with flowing organic shapes in blue and purple, editorial typography" src="./source/Packaging_Kayla_by_sefas_1.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Packaging Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Kayla's</h3>
-
-                        <p class="text-white/70 max-w-md">Vibrant and playful packaging design crafted to reflect the fresh, fruity taste of Italian ice.</p>
-                    </div>
-                </div>
-
-                <!-- Small Card 13 -->
-
-                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
-                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Packaging_Carb_by_sefas.webp">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-
-                        <span class="text-primary font-bold uppercase tracking-widest mb-2">Packaging Design</span>
-
-                        <h3 class="text-4xl font-black text-white mb-4">Carb Fiber Drink</h3>
-
-                        <p class="text-white/70 max-w-md">Sleek and appetizing packaging design blending health benefits with a rich chocolate appeal.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="w-full text-center mt-8 mb-0 items-end">
-            <div class="sticky top-32 sm:px-8 md:px-12 text-start font-bold">                
-                        
-                <a class="inline-flex items-center gap-3 text-blue-600 font-bold text-lg hover:underline underline-offset-8" href="https://behance.net/septianfajarsetiawan/">
-                More Galery
-
-                <span class="material-symbols-outlined" data-icon="arrow_right_alt">arrow_right_alt</span> </a>
-            </div>
-        </div>
-
-    </section>
-
-
-<!-- Client Work With -->
-
-
-<!-- Bottom Part: Logo Grid (Fixed Version) -->
-
-    <div class="text-center pt-12 border-t border-gray-200">
+    <div class="gap-4 w-full border-gray-200 justify-center text-center items-center">
         
         <!-- Top Part: Info & Stats -->
-        <div class="bg-gray-200 flex px-8 py-32 flex-col md:flex-row justify-center text-center mb-20 gap-12">
-        <!-- Left: Copywriting -->
-        <div class="md:w-1/2">
-            <h2 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Visualizing Success for Global & Local Brands
-            </h2>
-            <p class="text-lg items-center text-center text-gray-600 mb-8 max-w-screen">
-            Through comprehensive design exploration, I help brands communicate their message with visual impact and cross-platform consistency..
-            </p>
-            <a href="#" class="inline-block bg-blue-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-800 transition">
-            Let's Collaborate
-            </a>
-        </div>
+        <div class="bg-primary grid lg:grid-cols-2 px-12
+         py-32 flex md:flex-row justify-center text-center mb-20 gap-4">
 
-        <!-- Right: Stats -->
-        <div class="md:w-1/3 w-full space-y-10">
-            <div class="border-t border-blue-200 pt-4">
-            <h3 class="text-5xl font-bold text-blue-700">30+</h3>
-            <p class="text-xl text-gray-700 mt-2 font-medium">Brands trust my vision</p>
+        <!-- Left: Copywriting -->
+         
+            <div class="px-10 gap-8 mab-4 items-center justify-center">
+                <h2 class="font-headline text-5xl font-black tracking-tight text-white mb-8">
+                Visualizing Success for Global & Local Brands
+                </h2>
+                <p class="text-lg items-center text-center text-white mb-8 md-8 max-w-screen">
+                Through comprehensive design exploration, I help brands communicate their message with visual impact and cross-platform consistency.
+                </p>
+                    <a href="#" class="inline-block gap-32 bg-white text-blue-700 px-8 py-3 rounded-full font-bold hover:bg-blue-500 transition hover:text-white">
+                    Let's Collaborate
+                    </a>
             </div>
-            <div class="border-t border-blue-200 pt-4">
-            <h3 class="text-5xl font-bold text-blue-700">100+</h3>
-            <p class="text-xl text-gray-700 mt-2 font-medium">Successful projects delivered</p>
+
+            <!-- Right: Stats -->
+            <div class="gap-8 px-10">
+
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-md border border-white/5 hover:bg-blue-500 hover:text-on-background transition-all duration-500 group border-t border-blue-200 py-4 pt-4 mb-8">
+                    <h3 class="text-5xl font-bold text-white">30+</h3>
+                    <p class="text-xl text-white mt-2 font-medium">Brands trust my vision</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-md border border-white/5 hover:bg-blue-500 hover:text-on-background transition-all duration-500 group border-t border-blue-200 py-4 pt-4 mb-8">
+                    <h3 class="text-5xl font-bold text-white">100+</h3>
+                    <p class="text-xl text-white mt-2 font-medium">Successful projects delivered</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-md border border-white/5 hover:bg-blue-500 hover:text-on-background transition-all duration-500 group border-t border-blue-200 py-4 pt-4 mb-8">
+                    <h3 class="text-5xl font-bold text-white">98%</h3>
+                    <p class="text-xl text-white mt-2 font-medium">Client satisfaction rate</p>
+                </div>
             </div>
-            <div class="border-t border-blue-200 pt-4">
-            <h3 class="text-5xl font-bold text-blue-700">98%</h3>
-            <p class="text-xl text-gray-700 mt-2 font-medium">Client satisfaction rate</p>
-            </div>
-        </div>
         </div>
 
     <!-- Bottom Part: Logo Grid -->
-        <div class="max-w-6xl mx-auto sm:mb-8 lg:mb-8">
+
+        <div class="max-w-6xl mx-auto sm:mb-8 lg:mb-8 py-20 justify-center items-center text-center">
             <p class="text-sm uppercase tracking-widest text-gray-400 mb-10 font-bold">Trusted by industries leaders</p>
 
         <!-- Container Grid: Gunakan GAP untuk mengatur jarak horizontal/vertikal antar logo secara efisien -->
@@ -897,7 +598,314 @@
 
     </div>
 
-<!-- Contact Section -->
+    <!-- Revisi Portofolio Galery -->
+
+    <section class="py-32 px-6 scroll-mt-20 w-full" id="portfolio">
+
+        <div class="max-w-7xl mx-auto">
+
+            <div class="text-center mb-24">
+
+                <h2 class="font-headline text-6xl font-black tracking-tight mb-6">SELECTED <span class="text-primary">WORKS.</span></h2>
+
+                <p class="text-on-surface-variant text-xl">A curated gallery of recent design challenges and solutions.</p>
+
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:px-8 md:px-12">
+
+                <!-- Large Card 1 -->
+
+                <div class="md:col-span-8 md:row-span-2 h-flex group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Modern abstract UI design showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern abstract high-contrast UI design layout with flowing organic shapes in blue and purple, editorial typography" src="./source/Portofolio-Mockup-Mural-A.jpg">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Outlet Mural</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">RamenYA! Mall Kelapa Gading</h3>
+
+                        <p class="text-white/70 max-w-md">This project encompasses a comprehensive visual transformation for the RamenYA! Mall Kelapa Gading outlet, seamlessly blending traditional Japanese aesthetics with a dynamic modern touch.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Small Card 1 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Portofolio-Mockup-Mural-Bali.jpg">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Outlet Mural</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">RamenYA! Lippo Mall Bali</h3>
+
+                        <p class="text-white/70 max-w-md">Blending traditional Japanese aesthetics with modern design at RamenYA! Bali.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Small Card 2 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Minimalist mobile app screens" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Clean minimalist mobile application interface mockups floating in a light airy 3D space" src="./source/Portofolio-Mockup-Dunk-5-edt.jpg">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Concept Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">RamenYA! x Aerostreet (Concept Art)</h3>
+
+                        <p class="text-white/70 max-w-md">Merging Japanese culture with streetwear: A RamenYA! x Aerostreet concept.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Small Card 3 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Portofolio-Sosmed-Spc-A.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Social Media Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Rubine & Haustern</h3>
+
+                        <p class="text-white/70 max-w-md">Crafting high-impact social media assets for Rubine & Haustern, focusing on clean layouts and clear visual communication to drive product engagement.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Small Card 4 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Cover_Silent_Mind_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Cover Album</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Spa Esthethic Cover</h3>
+
+                        <p class="text-white/70 max-w-md">Concepting a Serene album cover designed for relaxation audio, yoga, and finding your inner peace.</p>
+
+                    </div>
+
+                </div>
+
+                
+                <!-- Small Card 5 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Book_Chinthia_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Cover Book</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">The Unfinished Response</h3>
+
+                        <p class="text-white/70 max-w-md">A non-fiction cover by Chynthia A Jacobs, inspiring readers to heal past trauma and embrace transformation.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Small Card 6 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Book_Elco_by_Sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Cover Book</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Compro Elco</h3>
+
+                        <p class="text-white/70 max-w-md">Modern company profile redesign for a packaging producer with updated business info.</p>
+                    </div>
+                </div>
+
+
+                <!-- Large Card 2 -->
+
+                <div class="md:col-span-8 md:row-span-2 h-flex group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Modern abstract UI design showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern abstract high-contrast UI design layout with flowing organic shapes in blue and purple, editorial typography" src="./source/Book_Menu_RamenYA_Reserve_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Menu Book</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">RamenYA Reserve</h3>
+
+                        <p class="text-white/70 max-w-md">Developing a minimalist and luxurious menu book design crafted for a high-end target market. </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Small Card 8 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Book_Kinder_Mit_ADHD_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Packaging Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Kaylas</h3>
+
+                        <p class="text-white/70 max-w-md">Developing vibrant and playful packaging designs that capture brand essence while ensuring product clarity and shelf appeal.</p>
+                    </div>
+                </div>
+
+                <!-- Small Card 8 -->   
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo-Beauty_Med_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Logo Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Beauty Med</h3>
+
+                        <p class="text-white/70 max-w-md">DEveloping a modern, minimalist, and feminine logo designed for a health and beauty brand.</p>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Epic_Cleaning_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Logo Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Epic Cleaning</h3>
+
+                        <p class="text-white/70 max-w-md">Developing A vibrant and playful logo design capturing a fresh, spotless cleaning brand identity.</p>
+                    </div>
+                </div>
+
+                <!-- Small Card 9 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Mailbox_Movie_Concept_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Logo Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Mailbox Movie</h3>
+
+                        <p class="text-white/70 max-w-md">A clever logo design for a premium DVD rental service, bringing the cinema experience home.</p>
+                    </div>
+                </div>
+
+                <!-- Small Card 10 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Nordic_House_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Logo Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">The Nordic House</h3>
+
+                        <p class="text-white/70 max-w-md">Developing A minimalist badge logo blending Nordic architecture with a vibrant coastal vibe.</p>
+                    </div>
+                </div>
+
+                <!-- Small Card 11 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Reddoggo_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Logo Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Redoggo</h3>
+
+                        <p class="text-white/70 max-w-md">Developing an elegant, eco-conscious logo for a premium German brand crafting recycled dog toys.</p>
+                    </div>
+                </div>
+
+                <!-- Small Card 12 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Logo_Woof_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Logo Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Redoggo</h3>
+
+                        <p class="text-white/70 max-w-md">A playful and energetic logo identity designed to make pet brands stand out.</p>
+                    </div>
+                </div>
+
+                <!-- Large Card 3 -->
+
+                <div class="md:col-span-8 md:row-span-2 h-flex group relative overflow-hidden rounded-xl bg-slate-200">
+
+                    <img alt="Modern abstract UI design showcase" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Modern abstract high-contrast UI design layout with flowing organic shapes in blue and purple, editorial typography" src="./source/Packaging_Kayla_by_sefas_1.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Packaging Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Kayla's</h3>
+
+                        <p class="text-white/70 max-w-md">Vibrant and playful packaging design crafted to reflect the fresh, fruity taste of Italian ice.</p>
+                    </div>
+                </div>
+
+                <!-- Small Card 13 -->
+
+                <div class="md:col-span-4 md:row-span-1 h-[500px] group relative overflow-hidden rounded-xl bg-slate-200">
+                    <img alt="Retro futuristic technology design" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-end studio photograph of a vintage synth against a clean blue background with sharp lighting" src="./source/Packaging_Carb_by_sefas.webp">
+
+                    <div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/20 to-transparent p-12 flex flex-col justify-end opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+
+                        <span class="text-white font-bold uppercase tracking-widest bg-white/10 backdrop-blur-md p-2 rounded-md border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">Packaging Design</span>
+
+                        <h3 class="text-4xl font-black text-white mb-4">Carb Fiber Drink</h3>
+
+                        <p class="text-white/70 max-w-md">Sleek and appetizing packaging design blending health benefits with a rich chocolate appeal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-full text-center mt-8 mb-0 items-end">
+            <div class="sticky top-32 sm:px-8 md:px-12 text-start font-bold">                
+                        
+                <a class="inline-flex items-center gap-3 text-blue-600 font-bold text-lg hover:underline underline-offset-8" href="https://behance.net/septianfajarsetiawan/">
+                More Gallery
+
+                <span class="material-symbols-outlined" data-icon="arrow_right_alt">arrow_right_alt</span> </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
 
     <section class="py-32 px-6 bg-surface-container-high w-full relative overflow-hidden scroll-mt-20" id="contact">
 
@@ -959,7 +967,7 @@
 
 </main>
 
-<!-- Footer -->
+    <!-- Footer -->
 
 <footer class="w-full py-12 px-8 bg-slate-50 border-t border-slate-100">
 
@@ -970,7 +978,7 @@
             <p class="text-slate-500 font-['Manrope'] text-sm tracking-wide">© 2026 Created by Sefas. All rights reserved.</p>
         </div>
 
-        <div class="flex-wrap justify-center gap-4 md:gap-8">
+        <div class="flex-wrap justify-center gap-4 md:gap-12">
             <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#">Home</a>
             <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#experience">Experience</a>
             <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#services">Services</a>
@@ -980,13 +988,19 @@
 
         <div class="flex gap-6">
 
-            <a class="bg-surface-container p-3 rounded-full hover:bg-primary hover:text-white transition-all" href="https://www.linkedin.com/in/septianfajarsetiawan?utm_source=share_via&utm_content=profile&utm_medium=member_android">
-                <span class="material-symbols-outlined" data-icon="language">language</span>
-
+            <a href="https://www.linkedin.com/in/septianfajarsetiawan?utm_source=share_via&utm_content=profile&utm_medium=member_android">
+                
+                <img 
+                    src="./source/Icon_Linkedin.svg" 
+                    alt="Logo Linkedin Retrace by Sefas" 
+                    class="h-8 w-auto object-contain">
             </a>
 
-            <a class="bg-surface-container p-3 rounded-full hover:bg-primary hover:text-white transition-all" href="https://behance.net/septianfajarsetiawan/">
-                <span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+            <a href="https://behance.net/septianfajarsetiawan/">
+                <img 
+                    src="./source/Icon_Behance.svg" 
+                    alt="Logo Behance Retrace by Sefas" 
+                    class="h-8 w-auto object-contain">
             </a>
         </div>
     </div>
