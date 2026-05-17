@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries">
     </script>
+
     <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -86,6 +87,41 @@
         },
       }
     </script>
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Mencegah halaman reload otomatis
+        
+        const submitBtn = document.getElementById('submitBtn');
+        const form = this;
+        
+        // Ubah tampilan tombol saat sedang mengirim data
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Sending...';
+        
+        // PASTE URL APLIKASI WEB yang Anda dapatkan dari Langkah 2 di bawah ini
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwii-w2XJpWxUgyK25xOQhQG8EOodSI72M5NmYQrBfpW5mXJsj3wO4rlWeT5h5732EQ/exec';
+        
+        // Ambil data form dan kirim via POST
+        fetch(scriptURL, { 
+            method: 'POST', 
+            body: new FormData(form)
+        })
+        .then(response => {
+            submitBtn.disabled = false;
+            submitBtn.innerText = 'Send Inquiry';
+            alert('Terima kasih! Pesan berhasil terkirim dan sistem otomatis telah membalas ke email Anda.');
+            form.reset(); // Kosongkan form kembali setelah sukses
+        })
+        .catch(error => {
+            submitBtn.disabled = false;
+            submitBtn.innerText = 'Send Inquiry';
+            alert('Ups, terjadi kesalahan sistem saat mengirim pesan. Silakan coba lagi.');
+            console.error('Error!', error.message);
+            });
+        });
+    </script>
+
     <style>
             .material-symbols-outlined {
                 font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -336,7 +372,7 @@
 
                         <div>
                             <h3 class="text-3xl font-black group-hover:text-white transition-colors">SOCIAL MEDIA DESIGNER</h3>
-                            <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Social Media Designer at a Malaysian agency, managing visual identities for 5 diverse brands. @ <span class="font-bold"> CURA MALAYSIA </span></p>
+                            <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Social Media Designer at a Malaysian agency, managing visual identities for 5 diverse brands. @ <span class="font-bold"> CURA DIGITAL - MY </span></p>
                         </div>
                     </div>
 
@@ -352,11 +388,18 @@
                         <div>
                             <h3 class="text-3xl font-black group-hover:text-white transition-colors">GRAPHIC DESIGNER</h3>
                         
-                            <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Delivering impactful marketing messages through creative exploration and high-fidelity visuals. @ <span class="font-bold"> CREATED BY SEFAS </span> </p>
+                            <p class="text-on-surface-variant group-hover:text-white/80 transition-colors">Delivering impactful marketing messages through creative exploration and high-fidelity visuals. @ <span class="font-bold"> CREATED BY SEFAS - ID </span> </p>
                         </div>   
                     </div>
                     
                     <span class="material-symbols-outlined text-4xl group-hover:text-white transition-all transform group-hover:translate-x-2" data-icon="north_east">north_east</span>
+                </div>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://www.playbook.com/s/sefas-resume-portofolio/5jBBAyxrjVMyxfkNFe6Yn6eg" target="_blank" class="inline-block">
+
+                    <button class="bg-primary text-on-primary px-12 py-5 rounded-full font-bold text-lg hover:bg-primary-dim transition-all shadow-xl shadow-primary/25">View Resume</button> </a>
+
                 </div>
             </div>
         </div>
