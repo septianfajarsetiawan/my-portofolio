@@ -163,7 +163,7 @@
 
         <!-- TopAppBar -->
 
-<header class="fixed top-4 inset-x-4 rounded-full flex-warp px-6 z-50 bg-white/70 backdrop-blur-xl shadow-2xl shadow-blue-900/5 max-w-7xl mx-auto flex items-center justify-between h-20 transition-all duration-300">
+<header class="fixed top-4 inset-x-4 rounded-full sm:rounded-md lg:rounded-full flex-warp px-6 z-50 bg-white/70 backdrop-blur-xl shadow-2xl shadow-blue-900/5 max-w-7xl mx-auto flex items-center justify-between h-20 transition-all duration-300">
     <div class="flex items-center gap-4 flex-shrink-0">
         <div class="material-symbols-outlined text-blue-700 text-2xl"> </div>
     
@@ -185,7 +185,7 @@
    target="_blank"
    class="inline-block">
     
-    <button class="bg-primary text-on-primary px-8 py-3 rounded-full font-bold uppercase tracking-tight text-sm transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"> Work with Me  </button>
+    <button class="bg-primary text-on-primary px-8 py-3 rounded-full sm:rounded-md lg:rounded-full font-bold uppercase tracking-tight text-sm transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg shadow-primary/20"> Work with Me  </button>
    </a>
 
 </header>
@@ -194,7 +194,7 @@
 
     <!-- Hero Section -->
 
-    <section class="min-h-[884px] pt-40 pb-20 px-6 flex flex-col justify-center relative overflow-hidden" data-stitch-vh="min-h-[884px] py-20 scroll-mt-20">
+    <section class="min-h-[800px] pt-40 pb-20 px-6 flex flex-col justify-center relative overflow-hidden" data-stitch-vh="min-h-[800px] py-20 scroll-mt-20">
 
 
         <div class="max-w-7xl mx-auto w-full editorial-grid relative z-10 sm:px-8 md:px-12">
@@ -345,11 +345,10 @@
                     <span class="material-symbols-outlined text-4xl group-hover:text-white transition-all transform group-hover:translate-x-2" data-icon="north_east">north_east</span>
                 </div>
 
-                <div class="flex flex-wrap gap-4">
+                <div class="flex flex-wrap gap-4 sm:md-2 md:mb-4">
                     <a href="https://www.playbook.com/s/sefas-resume-portofolio/5jBBAyxrjVMyxfkNFe6Yn6eg" target="_blank" class="inline-block">
 
-                    <button class="bg-primary text-on-primary px-12 py-5 rounded-full font-bold text-lg hover:bg-primary-dim transition-all shadow-xl shadow-primary/25">View Resume</button> </a>
-
+                    <button class="bg-primary text-on-primary px-12 py-4 rounded-full font-bold text-lg hover:bg-primary-dim transition-all shadow-xl shadow-primary/25">View Resume</button> </a>
                 </div>
             </div>
         </div>
@@ -358,7 +357,7 @@
 
     <!-- About / Strategic Approach -->
 
-    <section class="py-32 px-6 bg-surface-container-low scroll-mt-20" id="about">
+    <section class="py-12 px-6 bg-surface-container-low scroll-mt-20" id="about">
         <div class="max-w-7xl mx-auto sm:px-8 md:px-12">
             <div class="grid lg:grid-cols-2 gap-20 items-center">
                 <div class="space-y-8">
@@ -430,48 +429,97 @@
                     </a>
                 </div>
 
+                <!-- Service 1 -->
+
                 <div class="lg:col-span-8 grid md:grid-cols-2 gap-6">
 
-                    <!-- Service 1 -->
-                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">
+                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white transition-all duration-500 group flex flex-col justify-between min-h-[340px] cursor-pointer">
+                        <div>
+                        <div class="text-white group-hover:text-blue-600 transition-colors duration-500 mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
 
-                        <span class="material-symbols-outlined text-white group-hover:text-primary text-5xl mb-6 block" data-icon="web">web</span>
-                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary">Web Designer</h3>
-                        <p class="text-primary-container group-hover:text-on-surface-variant transition-colors">Crafting professional web interfaces that elevate personal presence and strengthen corporate digital identities.</p>
+                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-blue-600 transition-colors duration-500">
+                            Web Designer
+                        </h3>
 
+                        <p class="text-blue-200 group-hover:text-gray-600 transition-colors duration-500 text-base leading-relaxed">
+                            Crafting professional web interfaces that elevate personal presence and strengthen corporate digital identities.
+                        </p>
+                        </div>
+
+                        <div class="opacity-0 translate-y-2 max-h-0 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-12 transition-all duration-500 ease-in-out mt-4">
+                        <p class="text-blue-600 font-extrabold text-lg pt-2 border-t border-gray-100">
+                            Start From 1.500.000 IDR
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Service  -->
+
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white transition-all duration-500 group flex flex-col justify-between min-h-[340px] cursor-pointer">
+                    <div>
+                    <span class="material-symbols-outlined text-white group-hover:text-primary text-5xl mb-6 block transition-colors duration-500" data-icon="token">token</span>
+
+                    <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors duration-500">
+                        Full-time Remote Designer
+                    </h3>
+
+                    <p class="text-primary-container group-hover:text-on-surface-variant transition-colors duration-500 text-base leading-relaxed">
+                        Delivering high-fidelity design solutions and seamless collaboration to your team, no matter the distance.
+                    </p>
                     </div>
 
-                    <!-- Service 2 -->
+                    <div class="opacity-0 translate-y-2 max-h-0 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-12 transition-all duration-500 ease-in-out mt-4">
+                    <p class="text-primary font-extrabold text-lg pt-2 border-t border-gray-100">
+                        Start From 3.000.000 IDR
+                    </p>
+                    </div>
+                </div>
 
-                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">
+                <!-- Service 3 -->
 
-                        <span class="material-symbols-outlined text-white group-hover:text-primary text-5xl mb-6 block" data-icon="token">token</span>
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white transition-all duration-500 group flex flex-col justify-between min-h-[340px] cursor-pointer">
+                    <div>
+                        <span class="material-symbols-outlined text-white group-hover:text-primary text-5xl mb-6 block transition-colors duration-500" data-icon="brand_awareness">brand_awareness</span>
 
-                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary">Full-time Remote Designer</h3>
+                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors duration-500">
+                            Brand Identity
+                        </h3>
 
-                        <p class="text-primary-container group-hover:text-on-surface-variant transition-colors">Delivering high-fidelity design solutions and seamless collaboration to your team, no matter the distance.</p>
-
+                        <p class="text-primary-container group-hover:text-on-surface-variant transition-colors duration-500 text-base leading-relaxed">
+                            Crafting distinctive visual identities for new ventures and strategic brand redesigns to stay ahead.
+                        </p>
                     </div>
 
-                    <!-- Service 3 -->
-
-                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">
-
-                        <span class="material-symbols-outlined text-white group-hover:text-primary text-5xl mb-6 block" data-icon="brand_awareness">brand_awareness</span>
-                        
-                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary">Brand Identity</h3>
-
-                        <p class="text-primary-container group-hover:text-on-surface-variant transition-colors">Crafting distinctive visual identities for new ventures and strategic brand redesigns to stay ahead.</p>
+                    <div class="opacity-0 translate-y-2 max-h-0 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-12 transition-all duration-500 ease-in-out mt-4">
+                        <p class="text-primary font-extrabold text-lg pt-2 border-t border-gray-100">
+                            Start From 1.000.000 IDR
+                        </p>
                     </div>
-                    
-                    <!-- Service 4 -->
+                </div>
 
-                    <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white hover:text-on-background transition-all duration-500 group">
-                        <span class="material-symbols-outlined text-white group-hover:text-primary text-5xl mb-6 block" data-icon="devices">devices</span>
+                <!-- Service 4 -->
 
-                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary">Social Media Designer</h3>
+                <div class="bg-white/10 backdrop-blur-md p-10 rounded-xl border border-white/5 hover:bg-white transition-all duration-500 group flex flex-col justify-between min-h-[340px] cursor-pointer">
+                    <div>
+                        <span class="material-symbols-outlined text-white group-hover:text-primary text-5xl mb-6 block transition-colors duration-500" data-icon="devices">devices</span>
 
-                        <p class="text-primary-container group-hover:text-on-surface-variant transition-colors">Managing visual identities for multiple brands through strategic, high-impact social media content and storytelling.</p>
+                        <h3 class="text-2xl font-bold mb-4 text-white group-hover:text-primary transition-colors duration-500">
+                            Social Media Designer
+                        </h3>
+
+                        <p class="text-primary-container group-hover:text-on-surface-variant transition-colors duration-500 text-base leading-relaxed">
+                            Managing visual identities for multiple brands through strategic, high-impact social media content and storytelling.
+                        </p>
+                    </div>
+
+                    <div class="opacity-0 translate-y-2 max-h-0 group-hover:opacity-100 group-hover:translate-y-0 group-hover:max-h-12 transition-all duration-500 ease-in-out mt-4">
+                        <p class="text-primary font-extrabold text-lg pt-2 border-t border-gray-100">
+                            Start From 1.000.000 IDR
+                        </p>
                     </div>
                 </div>
             </div>
@@ -969,7 +1017,7 @@
 
     <!-- Footer -->
 
-<footer class="w-full py-12 px-8 bg-slate-50 border-t border-slate-100">
+<footer class="w-full py-12 px-8 md:px-12 lg:px-16 bg-slate-50 border-t border-slate-100">
 
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
 
@@ -978,12 +1026,16 @@
             <p class="text-slate-500 font-['Manrope'] text-sm tracking-wide">© 2026 Created by Sefas. All rights reserved.</p>
         </div>
 
-        <div class="flex-wrap justify-center gap-4 md:gap-12">
-            <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#">Home</a>
-            <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#experience">Experience</a>
-            <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#services">Services</a>
-            <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#portfolio">Portfolio</a>
-            <a class="text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#contact">Contact</a>
+        <div class="flex-wrap justify-center item-center gap-4 md:gap-12">
+            <a class="px-2 lg:px-4 text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#">Home</a>
+
+            <a class="px-2 lg:px-4 text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#experience">Experience</a>
+
+            <a class="px-2 lg:px-4 text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#services">Services</a>
+
+            <a class="px-2 lg:px-4 text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#portfolio">Portfolio</a>
+
+            <a class="px-2 lg:px-4 text-slate-500 hover:text-blue-500 transition-opacity font-['Manrope'] text-sm uppercase tracking-widest font-bold hover:underline underline-offset-4" href="#contact">Contact</a>
         </div>
 
         <div class="flex gap-6">
